@@ -1,0 +1,21 @@
+class CfgNotifications
+{
+    class taskAssigned
+    {
+        title = "%1";             // Title of the notification
+        iconPicture = "";         // Path to an icon (optional)
+        description = "%2";       // Description text
+        duration = 5;             // Duration in seconds
+        priority = 0;             // Priority level
+    };
+};
+class CfgSounds
+{
+    sounds[] = {AirRaidSiren};
+    class AirRaidSiren
+    {
+        name = "Air Raid Siren";
+        sound[] = {"\sounds\airRaid.ogg", db+10, 1.0};
+        titles[] = {};
+    };
+};
